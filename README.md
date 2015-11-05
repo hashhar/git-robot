@@ -21,10 +21,10 @@ cd git-robot
 # Roadmap
 
 - [x] Status
-- [] Push
-- [] Pull
-- [] Commit
-- [] Add unstaged changes
-- [] Add and commit
-- [] Delete merged branches
-- [] Any custom command entered by the user
+- [ ] Push
+- [ ] Pull
+- [ ] Commit
+- [ ] Add unstaged changes
+- [ ] Add and commit
+- [ ] Delete merged branches
+- [ ] Any custom command entered by the user
