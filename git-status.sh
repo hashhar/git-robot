@@ -1,0 +1,38 @@
+function unstaged_changes() {
+	worktree=${1%/*};
+	git --git-dir="$1" --work-tree="$worktree" diff-files --quiet --ignore-submodules --
+}
+
+function uncommited_changes() {
+	worktree=${1%/*};
+	git --git-dir="$1" --work-tree="$worktree" diff-index --cached --quiet HEAD --ignore-submodules --
+}
+if [ -n $1 ]
+then
+	echo "Enter the base path to look into:"
+	read base
+	echo "Enter the maximum search depth:"
+	read depth
+else
+	base=$1
+	depth=$2 + 1
+fi
+# Store the old IFS to restore it later
+OIFS=$IFS
+# Set IFS to newlines (yes that is some *nix stupidity to make \n\b represent newlines)
+IFS=$(echo -en "\n\b")
+# Iterate through all directories according to our criteria
+for gitdir in `find $base -maxdepth $depth -type d -name .git`;
+do
+	worktree=${gitdir%/*};
+	if ! unstaged_changes $gitdir
+	then
+		echo "unstaged     $gitdir"
+	fi
+
+	if ! uncommited_changes $gitdir
+	then
+		echo "uncommitted  $gitdir"
+	fi
+done
+IFS=$OIFS
