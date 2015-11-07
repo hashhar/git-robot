@@ -1,5 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/hashhar/git-robot.png?label=ready&title=Ready)](https://waffle.io/hashhar/git-robot)
-[![Stories in Progress](https://badge.waffle.io/hashhar/git-robot.png?label=progress&title=Progress)](https://waffle.io/hashhar/git-robot)
+[![Stories in Progress](https://badge.waffle.io/hashhar/git-robot.png?label=in%20progress&title=In%20Progress)](https://waffle.io/hashhar/git-robot)
 
 # Git Robot
 
