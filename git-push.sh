@@ -16,15 +16,16 @@ function push() {
 	git --git-dir="$1" --work-tree="$worktree" push
 }
 
-if [ -n $1 ]
+if [ $@ -lt 1 ]
 then
 	echo "Enter the base path in which to look for repositories to run the command (git push) on:"
 	read base
 	echo "Enter the maximum search depth:"
 	read depth
+	depth=`expr $depth + 1`
 else
 	base=$1
-	depth=$2 + 1
+	depth=`expr $2 + 1`
 fi
 # Store the old IFS to restore it later
 OIFS=$IFS
