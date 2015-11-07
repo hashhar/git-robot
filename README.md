@@ -1,3 +1,6 @@
+[![Stories in Ready](https://badge.waffle.io/hashhar/git-robot.png?label=ready&title=Ready)](https://waffle.io/hashhar/git-robot)
+[![Stories in Progress](https://badge.waffle.io/hashhar/git-robot.png?label=progress&title=Progress)](https://waffle.io/hashhar/git-robot)
+
 # Git Robot
 
 Ever felt the need to be able to run a git command on all of the repositories on your system (or a select few within a directory)? Then this is for you.
