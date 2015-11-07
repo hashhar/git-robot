@@ -31,3 +31,7 @@ cd git-robot
 - [ ] Add and commit
 - [ ] Delete merged branches
 - [ ] Any custom command entered by the user
+
+# My Throughput
+
+[![Throughput Graph](https://graphs.waffle.io/hashhar/git-robot/throughput.svg)](https://waffle.io/hashhar/git-robot/metrics) 
