@@ -24,7 +24,7 @@ cd git-robot
 # Roadmap
 
 - [x] Status
-- [ ] Push
+- [x] Push
 - [ ] Pull
 - [ ] Commit
 - [ ] Add unstaged changes
