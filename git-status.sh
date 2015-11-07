@@ -36,6 +36,5 @@ do
 	then
 		echo "Uncommitted changes in $gitdir"
 	fi
-	echo "agahaah"
 done
 IFS=$OIFS
