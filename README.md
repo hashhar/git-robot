@@ -14,6 +14,15 @@ cd git-robot
 ./git-command                // where git-command is one of the scripts in the repository
 ```
 
+# Usage
+
+```bash
+./git-status.sh D:/GitHub/Forks 2  # This will run git status
+./git-push.sh D:/GitHub/Forks 2  # This will run git push
+./git-pull.sh D:/GitHub/Forks 2 # This will run git pull
+# All of the above will run commands on repositories inside D:/GitHub/Forks and will search only 2 subdirectories deep
+```
+
 # How to Contribute
 
 - You should open issues for bugs, feature requests (check the roadmap before posting a request) or even typos.
@@ -34,4 +43,4 @@ cd git-robot
 
 # My Throughput
 
-[![Throughput Graph](https://graphs.waffle.io/hashhar/git-robot/throughput.svg)](https://waffle.io/hashhar/git-robot/metrics) 
+[![Throughput Graph](https://graphs.waffle.io/hashhar/git-robot/throughput.svg)](https://waffle.io/hashhar/git-robot/metrics)
