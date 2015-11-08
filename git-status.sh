@@ -9,7 +9,7 @@ function uncommited_changes() {
 	git --git-dir="$1" --work-tree="$worktree" diff-index --cached --quiet HEAD --ignore-submodules --
 }
 
-if [ $@ -lt 1 ]
+if [[ $# -lt 1 ]]
 then
 	echo "Enter the base path in which to look for repositories to run the command (git status) on:"
 	read base
