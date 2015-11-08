@@ -4,7 +4,7 @@ function pull() {
 	git --git-dir="$1" --work-tree="$worktree" pull
 }
 
-if [ $@ -lt 1 ]
+if [[ $# -lt 1 ]]
 then
 	echo "Enter the base path in which to look for repositories to run the command (git push) on:"
 	read base
