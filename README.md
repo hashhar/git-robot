@@ -25,7 +25,7 @@ cd git-robot
 
 - [x] Status
 - [x] Push
-- [ ] Pull
+- [x] Pull
 - [ ] Commit
 - [ ] Add unstaged changes
 - [ ] Add and commit
