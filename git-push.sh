@@ -69,6 +69,8 @@ do
 		fi
 	# If everything is fine, push the stuff without asking anything
 	else
+		echo "Pushing to $gitdir"
+		echo "\n"
 		push $gitdir
 	fi
 done

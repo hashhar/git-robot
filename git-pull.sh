@@ -22,6 +22,8 @@ IFS=$(echo -en "\n\b")
 # Iterate through all directories according to our criteria
 for gitdir in `find $base -maxdepth $depth -type d -name .git`;
 do
+	echo "Pulling from $gitdir"
+	echo "\n"
 	worktree=${gitdir%/*};
 	pull $gitdir
 done
