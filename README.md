@@ -1,8 +1,3 @@
-[![Stories in Help Wanted](https://badge.waffle.io/hashhar/git-robot.png?label=help%20wanted&title=Help%20Wanted/Backlog)](https://waffle.io/hashhar/git-robot)
-[![Stories in Ready](https://badge.waffle.io/hashhar/git-robot.png?label=ready&title=Ready)](https://waffle.io/hashhar/git-robot)
-[![Stories in Progress](https://badge.waffle.io/hashhar/git-robot.png?label=in%20progress&title=In%20Progress)](https://waffle.io/hashhar/git-robot)
-[![Stories in Under Review](https://badge.waffle.io/hashhar/git-robot.png?label=under%20review&title=Under%20Review)](https://waffle.io/hashhar/git-robot)
-
 # Git Robot
 
 Ever felt the need to be able to run a git command on all of the repositories on your system (or a select few within a directory)? Then this is for you.
