@@ -10,7 +10,6 @@ function uncommited_changes() {
 }
 
 # Our function to push
-# REVIEW: Push quietly or with progress
 function push() {
 	worktree=${1%/*};
 	git --git-dir="$1" --work-tree="$worktree" push
@@ -35,7 +34,6 @@ IFS=$(echo -en "\n\b")
 for gitdir in `find $base -maxdepth $depth -type d -name .git`;
 do
 	worktree=${gitdir%/*};
-	# REVIEW: Should we check for the unstaged or uncommitted changes or just push the damn stuff?
 	# Use if elif because we want to prompt for other stuff only in case of unstaged or uncommitted changes
 	if ! unstaged_changes $gitdir
 	then
