@@ -27,7 +27,7 @@ then
 else
 	base=$1
 	depth=`expr $2 + 1`
-	message="Amend this commit message"
+	message=$3
 fi
 # Store the old IFS to restore it later
 OIFS=$IFS
