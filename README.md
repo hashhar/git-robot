@@ -32,8 +32,7 @@ cd git-robot
 - [x] Status
 - [x] Push
 - [x] Pull
-- [ ] Commit staged changes and ignore unstaged changes
-- [ ] Add unstaged changes and commit
-- [ ] Add all changes and commit
+- [x] Commit staged changes and ignore unstaged changes
+- [x] Add unstaged changes and commit
 - [ ] Delete merged branches
 - [ ] Any custom command entered by the user
