@@ -1,0 +1,1 @@
+(comm -23 <(comm -23 <(find . -name .git -print0 | xargs -0 dirname | sort) <(find . -name .gitignore -print0 | xargs -0 dirname | sort)) <(find . -name .gitattributes -print0 | xargs -0 dirname | sort))>unconfigured-repos.txt
