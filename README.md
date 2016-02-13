@@ -13,11 +13,8 @@ cd git-robot
 
 # Usage
 
-```bash
-./git-status.sh D:/GitHub/Forks 2  # This will run git status
-./git-push.sh D:/GitHub/Forks 2  # This will run git push
-./git-pull.sh D:/GitHub/Forks 2 # This will run git pull
-# All of the above will run commands on repositories inside D:/GitHub/Forks and will search only 2 subdirectories deep
+```
+./git-command --help
 ```
 
 # How to Contribute
