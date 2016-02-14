@@ -1,27 +1,28 @@
-# Our functions to tell us about the state of our repo
+# Query the state of a repo
 function unstaged_changes() {
 	worktree=${1%/*};
 	git --git-dir="$1" --work-tree="$worktree" diff-files --quiet --ignore-submodules --
 }
 
+# Query the state of a repo
 function uncommited_changes() {
 	worktree=${1%/*};
 	git --git-dir="$1" --work-tree="$worktree" diff-index --cached --quiet HEAD --ignore-submodules --
 }
 
-# Our function to add all unstaged changes
+# Stage all changes
 function add-unstaged() {
 	worktree=${1%/*};
 	git --git-dir="$1" --work-tree="$worktree" add $2
 }
 
-# Our function to commit staged changes
+# Commit staged changes
 function commit-staged() {
 	worktree=${1%/*};
 	git --git-dir="$1" --work-tree="$worktree" commit -m "$message"
 }
 
-if [[ $# -lt 1 ]]
+if [[ $# -lt 2 ]]
 then
 	echo "Enter the base path in which to look for repositories to run the command (git commit-staged) on:"
 	read base
