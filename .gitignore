@@ -1,3 +1,4 @@
+# ===== Global/Windows.gitignore ===== #
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -17,8 +18,18 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Tutorials
-Tutorial
+# ===== Global/Linux.gitignore ===== #
+*~
 
-# VSCODE
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# ===== Global/VisualStudioCode.gitignore ===== #
 .vscode
+
