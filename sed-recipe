@@ -1,0 +1,1 @@
+sed -i 's/D:\/GitHub/\/media\/ashhar\/Resources\/GitHub/g' "$1"
